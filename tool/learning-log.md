@@ -21,9 +21,22 @@
       * I asked ChatGPT and it told me:
         * souce code that is avaiable to the public for anyone to use under a specific license.
         * anyone can modify, use, view, and redistribute the code anytime that they want
-  * How to Use:
-    * download the complete three.js on system files and upload it from there
-      *  download it from the latest upload from its official GitHub Page 
+  * Code:
+    * Creating a scene:
+      ``` JS
+      const scene = new THREE.Scene();
+      const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+      ```
+        * The first line of code `const scene = new THREE.Scene();`
+          * is empty at first
+          * you start to add things to it like camera, lighting, rendering
+        * The second line of code `const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );`
+          * Creates a camera
+          * `THREE.PerspectiveCamera` - Makes a realistic 3D camera that looks like how human eyes see
+          * `75` - Field of View
+          * `window.innerWidth / window.innerHeight` - shape of the camera's view
+          * `0.1` - near clipping plane
+          * `1000` - far clipping plane
 
 ### X/X/XX:
 * Text
