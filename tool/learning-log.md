@@ -15,7 +15,7 @@
 * Lets you use GPU to render graphics and 3D objects on a canvas in the web browswer.
 * Since you are using javascript you can edit with other HTML elements.
 * Three.js supports most browswers.
-* Does not require third party plug in order to run the code. 
+* Does not require third party plug in order to run the code.
   * Follow Up Questions from the Article I read:
     * What does it mean when something is **open-source**
       * I asked ChatGPT and it told me:
@@ -23,13 +23,15 @@
         * anyone can modify, use, view, and redistribute the code anytime that they want
   * How to Use:
     * download the complete three.js on system files and upload it from there
-      *  download it from the latest upload from its official GitHub Page 
+      *  download it from the latest upload from its official GitHub Page
 
-### X/X/XX:
-* Text
+### 11/3/2025:
+* I created a scene using three.js and practiced the mechanics of creating a scene
+* Since I learned how to create a scene last time I used the code I learned last time: 
 
 
-<!-- 
+
+<!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
 * Challenges, a-ha moments, etc
