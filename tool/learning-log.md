@@ -27,7 +27,7 @@
 
 ### 11/3/2025:
 * I created a scene using three.js and practiced the mechanics of creating a scene
-* Since I learned how to create a scene last time I used the code I learned last time: 
+* Since I learned how to create a scene last time I used the code I learned last time:
 
 
 
