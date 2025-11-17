@@ -30,6 +30,20 @@
 * Since I learned how to create a scene last time I used the code I learned last time:
 
 
+### 11/17/2025
+* I decided to try out a new project using my tool, and made a **3D rotating cube**
+* I copied and pasted much of the code I had before from my old three.js practice
+* I incorporated new things that I learned from the website, and just youtube videos in general:
+  * when you make a cube geometry is created, and a green material is applied to it, then you would add the cube to the scene
+  ``` JS
+  const geometry = new THREE.BoxGeometry();
+const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+const cube = new THREE.Mesh(geometry, material);
+scene.add(cube);
+```
+  * `BoxGeometry` - creates a cube with equal dimensions on all sides
+  * `scene.add(cube)` - adds the cube to the scene
+  * `MeshBasicMaterial` - a simple material that gives the cube its color
 
 <!--
 * Links you used today (websites, videos, etc)
