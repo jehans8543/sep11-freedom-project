@@ -45,6 +45,28 @@ scene.add(cube);
   * `scene.add(cube)` - adds the cube to the scene
   * `MeshBasicMaterial` - a simple material that gives the cube its color
 
+  ### 11/20/2025
+  * I was able to try and learn how to tackle one of my issues, which is trying to get the cube to appear:
+  * **Render Loop:**
+  ``` JS
+  function animate() {
+  requestAnimationFrame(animate);
+
+  cube.rotation.x += 0.01;
+  cube.rotation.y += 0.01;
+
+  renderer.render(scene, camera);
+}
+
+animate();
+```
+* `requestAnimationFrame(animate)` - tells the browser to run on `animate()` again before the next frame is drawn
+* Loop runs for around 60 seconds
+* `cube.rotation.x` & `y` inside the loop makes the cube animate more smoothly
+* This loop allows the cube to appear
+
+
+
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
