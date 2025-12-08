@@ -65,6 +65,29 @@ animate();
 * `cube.rotation.x` & `y` inside the loop makes the cube animate more smoothly
 * This loop allows the cube to appear
 
+### 12/07/2025
+* **reder** - draws the scene onto the screen using WebGL
+  * `antialias: true` - smoothes the edges
+  * `renderer.domElement` - the canvas Three.js creates internally
+``` JS
+const renderer = new THREE.WebGLRenderer({ antialias: true });
+renderer.setSize(window.innerWidth, window.innerHeight);
+document.body.appendChild(renderer.domElement);
+```
+* Geometry
+  * the geometry in three.js helps define shapes such as the new shape that I learned which was a _sphere_
+  * `1` - radius
+  * `32,32` - number of horizontal and vertical segnemnts
+ ``` JS
+const geometry = new THREE.SphereGeometry(1, 32, 32);
+```
+* Material
+  * controls the color, texture, and etc.
+  * `MeshStandardMaterial`- responds to light realistically
+``` JS
+const material = new THREE.MeshStandardMaterial({ color: 0x00aaff });
+```
+ 
 
 
 <!--
