@@ -87,7 +87,28 @@ const geometry = new THREE.SphereGeometry(1, 32, 32);
 ``` JS
 const material = new THREE.MeshStandardMaterial({ color: 0x00aaff });
 ```
- 
+ ### 12/14/2025
+ * I felt like that I have been doing a lot of coding recently when it comes to researching my tool
+ * I thought it was time to swtich things up a bit and do some more traditional reserach on my tool:
+ * I read this article: [Getting started with Three.js](https://web.dev/articles/three-intro)
+   * Materials in three.js
+     * No lighting effects
+     * basic diffuse lighting
+     * Reflective, shiny surfaces
+     * you can apply `THREE.MeshLambertMaterial` for the sphere
+     ``` JS
+     var sphereMaterial = new THREE.MeshLambertMaterial({ color: 0xCC0000 });
+     ```
+  * Manipulating objects
+     * objects in three.js inherit `Object3D` which provides useful properties:
+       * `object.position`
+       * `oject.rotation`
+       * `object.scale`
+       ``` JS
+       sphere.geometry.vertices;
+       sphere.position.set(x, y, z);
+       ```
+
 
 
 <!--
