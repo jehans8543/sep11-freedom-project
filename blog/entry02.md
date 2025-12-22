@@ -70,6 +70,11 @@ const material = new THREE.MeshStandardMaterial({ color: 0x00aaff });
 
 As you can see above three.js uses a lot of code that we have not learned at all in class. We especially did not learn anything related to how to code/render 3D shapes. Therefore much of what I tinkered is me trying to get a feel for how to make the shapes and functions of three.js to work. 
 
+## EDP
+In terms of the EDP process I believe that I am still in stage 2. The reason for this is because we are stil "reseraching the problem" stage. In this context it means reseraching about the tool needed in order to do my freedom project. 
+
+In terms of reserach, I believe that I still have a long way to go in stage two, since I felt as if I barely touched the surface of my tool, since it requires so much prior knowledge on how to use it. Therefore I believe it will take me another month of reseraching for me to be able to advance into the next stage of the EDP process. 
+
 ## Skills 
 
 ### Learning From Scratch
