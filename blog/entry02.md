@@ -113,6 +113,9 @@ function animate() {
 
 animate();
 ```
+**Outcome**:
+<img width="626" height="649" alt="Screenshot 2025-12-21 191116" src="https://github.com/user-attachments/assets/3c85b138-0a43-4764-b439-82ede70b3c61" />
+
 No matter how much times I looked over this code I couldn't seem to find out whats wrong with it. Therefore, I decided to scrap this code and code it all over again. Yes this may be inconvienent, but it was the only way I knew how to fix my code. Therefore when I rewrote the code it looked like something like this:
 
 ``` JS
@@ -149,10 +152,12 @@ window.addEventListener("resize", () => {
   renderer.setSize(window.innerWidth, window.innerHeight);
 });
 ```
+**Outcome**: 
+<img width="679" height="822" alt="Screenshot 2025-12-21 191014" src="https://github.com/user-attachments/assets/d6a38db3-4f3d-4907-95ff-bcfa5faba0c9" />
+
 After rewriting the code, I realized the errors that I had were spelling mistakes, one of them being in `const scene = new THREE.Scene();` in which I spelled scene wrong, and another one of the errors being `renderer.render` is missing a camera argument, in which I added it in the new time I recoded the cube. 
 
 Which is why I learned the lessons that the more you repeat something the more likely you are to learn and find the mistake, since practice makes perfect.
-
 
 
 [Previous](entry01.md) | [Next](entry03.md)
