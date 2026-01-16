@@ -109,6 +109,38 @@ const material = new THREE.MeshStandardMaterial({ color: 0x00aaff });
        sphere.position.set(x, y, z);
        ```
 
+  ### 01/15/2025
+``` JS
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(75, innerWidth/innerHeight, 0.1, 100);
+const renderer = new THREE.WebGLRenderer();
+renderer.setSize(innerWidth, innerHeight);
+document.body.appendChild(renderer.domElement);
+
+const cube = new THREE.Mesh(
+  new THREE.BoxGeometry(),
+  new THREE.MeshNormalMaterial()
+);
+scene.add(cube);
+camera.position.z = 3;
+
+function animate() {
+  requestAnimationFrame(animate);
+  cube.rotation.x += 0.01;
+  cube.rotation.y += 0.01;
+  renderer.render(scene, camera);
+}
+animate();
+
+
+* created a scene with a camera and a cube, I setted up the render position and was able to learn how to move the camera fully. I also rendered it so the cube can kinda rotate but that is still kind of glitchy
+* Notes
+  * `requestAnimationFrame(animate)` - tells the browser to call animate before the next screen repaint (smooth animation)
+  * `cube.rotation.x/y += 0.01` - cube.rotation.x/y += 0.01
+  * `requestAnimationFrame` - a browser function for smooth animations
+  * `MeshNormalMaterial()` - defines how the cube looks like
+
+
 
 
 <!--
