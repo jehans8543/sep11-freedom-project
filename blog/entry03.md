@@ -83,10 +83,17 @@ As I said in the beginning of my blog, I haven't made any progress towards my ac
 
 Which I why I believe that I am still currently stuck on stage 2 of the EDP process which is _researching the problem_ but in this case it is reseraching my tool. 
 
+### Skills 
 
+#### Use of AI 
+When it comes to using AI in schools there's countless arguments for it, against it, or in the middle of it. I have some teachers tell me its the worst thing in the world, while some teachers like Mr. Mueller in support of it to some degree. Though Mr. Mueller only supports its if you're using it to _chase the learning_. But what does it mean to chase the learning?
 
+To me chasing the learning is when you have genuine questions to ask AI, or to help you point out mistakes without giving you the answer (of couse after trying to find the mistake yourself first). I believed that I did the first one, which is asking AI genuine questions about topics you know nothing about, fueled by curiousity rather than just finding the answer to a question. When I asked ChatGPT a question about why does my cube changes colors as it moves without me doing anything specfic. Despite already having the answer, I wanted to dive deeper and learned how it worked. Which is why I belive I _chased the learning_ rather than _chasing the points_. 
 
+#### Synthesizing my Learning 
+When it comes to code, every little thing you learn can be pieced together to create soemthing bigger. As a learner, I prefer learning about concepts of code in small individual snippets rather than learn how a whole chunk of codes work together. Neither learning styles are neccarily wrong, but it's important that when you learn indiviudally you understand how everything comes together. And its important for when you learn code in chunks you know how each line works on its own. 
 
+As a learner who likes to learn code individually, I wanted to give myself a mini project to check if I know how everything I learned pieces together. This allows me to check in with myself with the concepts I need work on and the concepts I can proceed to advance in. And after my mini project I learned that I need to improve on how to customize the _mesh_ of my objects, which heavily important for my main project idea when it comes to desining the cells. 
 
 [Previous](entry02.md) | [Next](entry04.md)
 
