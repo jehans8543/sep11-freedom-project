@@ -39,7 +39,7 @@ After coding this I was quite proud of the result that I ended up having:
 ##### Concepts 
 Some of the concepts and terms that I used to code this are: 
 
-In order to understand more about rendering I used this (https://www.youtube.com/watch?v=XPhAR1YdD6o)[helpful video] to learn more about how rendering works, especially since I didn't spend much time in learning about it in my past research. 
+In order to understand more about rendering I used this [helpful video](https://www.youtube.com/watch?v=XPhAR1YdD6o) to learn more about how rendering works, especially since I didn't spend much time in learning about it in my past research. 
 
 * **Rendering:**
   * `const renderer = new THREE.WebGLRenderer();` - draws the picture to appear on the screen
