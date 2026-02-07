@@ -78,6 +78,11 @@ To give a summary, it's basically saying that `MeshNormalMaterial`, is programme
 
 Hence, I found out that all I wanted to do was in front of me all along, I just had to understand the concept more better. 
 
+### EDP
+As I said in the beginning of my blog, I haven't made any progress towards my actual project itself, rather I've been investing time in getting acquainted with my tool rather than starting my project. Since a three model of a plant/animal cell would be heavily reliant on understanding how to use three.js. 
+
+Which I why I believe that I am still currently stuck on stage 2 of the EDP process which is _researching the problem_ but in this case it is reseraching my tool. 
+
 
 
 
