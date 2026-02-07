@@ -39,27 +39,27 @@ After coding this I was quite proud of the result that I ended up having:
 ##### Concepts 
 Some of the concepts and terms that I used to code this are: 
 
-* Rendering:
+* **Rendering:**
   * `const renderer = new THREE.WebGLRenderer();` - draws the picture to appear on the screen
-* Animation Looping:
+* **Animation Looping:**
  ``` JS
 function animate() {
   requestAnimationFrame(animate);
 ```
   * allows the code to repeat
-* Objects
+* **Objects:**
   * `scene.add(cube);` - what allows objects to be added on the scene
-* Rotation
+* **Rotation:**
 ```JS
 cube.rotation.x += 0.01;
 cube.rotation.y += 0.01;
 ```
   * Allows for the cube to rotate
-* Mesh
+* **Mesh:**
   * `const cube = new THREE.Mesh(geometry, material);` - the polished appearance of the object (shape, apperance, and etc.)
-  * Material
+  * **Material:**
     * `new THREE.MeshNormalMaterial()` - color, shading, and texture
-  * Geometry
+  * **Geometry:**
     * `new THREE.BoxGeometry()` - shape of the object     
 
 ##### Challenges
