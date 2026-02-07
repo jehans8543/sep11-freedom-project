@@ -63,7 +63,22 @@ cube.rotation.y += 0.01;
     * `new THREE.BoxGeometry()` - shape of the object     
 
 ##### Challenges
-As I was coding this mini project I did encounter some errors along the way, especially when it came to making the cube shift colors as it rotates. 
+As I was coding this mini project I did encounter some errors along the way, especially when it came to making the cube shift colors as it rotates.
+
+The code for the color orientation is fallen under the material section in three.js and it looked something like this: `new THREE.MeshNormalMaterial()`. The problem I had here was that this code was applicable for color, shading and its texture but all I wanted to do was change the color as it rotates. Hence, I decided to just add it in my code and add a hex code within it to check that it worked: 
+
+`new THREE.MeshNormalMaterial(0xff0000);`
+
+When I tried this line of code it didnt work, there for I wanted to see how it looked like without the hex code to backtrack my steps and see where I went wrong with the color. Thats when I found out that a gradient of colors appears when it rotates when you leave the cube as `new THREE.MeshNormalMaterial()` without any color codes inside. I was extremely confused for why this was the case, so I thought this might be a good reason to ask AI to see why this works:
+
+<img width="834" height="1035" alt="image" src="https://github.com/user-attachments/assets/22c2e3d2-67f0-40ab-acbc-8e5ec675a498" />
+<img width="771" height="372" alt="image" src="https://github.com/user-attachments/assets/7c333112-5953-4751-a297-76501b0605cc" />
+
+To give a summary, it's basically saying that `MeshNormalMaterial`, is programmed so that it doesn't use a single color. Instead it relies on the direction of the object for its color to change, and since my cube rotates in every direction it becomes a graident of colors. 
+
+Hence, I found out that all I wanted to do was in front of me all along, I just had to understand the concept more better. 
+
+
 
 
 
