@@ -131,8 +131,12 @@ function animate() {
   renderer.render(scene, camera);
 }
 animate();
+<<<<<<< HEAD
 
 
+=======
+```
+>>>>>>> 9bd584e6d709009af65f144df2ddf2ce1c384991
 * created a scene with a camera and a cube, I setted up the render position and was able to learn how to move the camera fully. I also rendered it so the cube can kinda rotate but that is still kind of glitchy
 * Notes
   * `requestAnimationFrame(animate)` - tells the browser to call animate before the next screen repaint (smooth animation)
@@ -140,6 +144,10 @@ animate();
   * `requestAnimationFrame` - a browser function for smooth animations
   * `MeshNormalMaterial()` - defines how the cube looks like
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9bd584e6d709009af65f144df2ddf2ce1c384991
 
 
 <!--
