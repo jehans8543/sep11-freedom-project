@@ -131,12 +131,9 @@ function animate() {
   renderer.render(scene, camera);
 }
 animate();
-<<<<<<< HEAD
 
 
-=======
 ```
->>>>>>> 9bd584e6d709009af65f144df2ddf2ce1c384991
 * created a scene with a camera and a cube, I setted up the render position and was able to learn how to move the camera fully. I also rendered it so the cube can kinda rotate but that is still kind of glitchy
 * Notes
   * `requestAnimationFrame(animate)` - tells the browser to call animate before the next screen repaint (smooth animation)
@@ -144,10 +141,28 @@ animate();
   * `requestAnimationFrame` - a browser function for smooth animations
   * `MeshNormalMaterial()` - defines how the cube looks like
 
-<<<<<<< HEAD
-=======
+  ### 03/08/2026
+  * I started the basic set up for my project
+  * set up scene
+  * created a green sphere for testing:
+  ``` JS
+  const scene = new THREE.Scene();
+  const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+  const renderer = new THREE.WebGLRenderer();
+  renderer.setSize(window.innerWidth, window.innerHeight);
+  document.body.appendChild(renderer.domElement);
 
->>>>>>> 9bd584e6d709009af65f144df2ddf2ce1c384991
+  const geometry = new THREE.BoxGeometry(); // Cube shape
+  const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 }); // Green color
+  const cube = new THREE.Mesh(geometry, material);
+  scene.add(cube);
+```
+  * When I tried running the test I encountered an error:
+    * The code from the three.js wouldn't appear
+     * Tried the code in different IDE's (jsbin, pickcode, and etc.) and it still wouldn't appear
+     * tried installing three.js again and still didn't work
+     * my next step is to try to install it using a npm, since it doesn't work the usually way by using a header 
+
 
 
 <!--
