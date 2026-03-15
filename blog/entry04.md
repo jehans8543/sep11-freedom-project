@@ -67,6 +67,52 @@ I decided that my MVP would have the basic information of what an animal cell sh
 
 ### MVP Plan
 
+* **Deadline** - 03/02/2026
+- [ ] Create a scene
+  - [ ] Uses DOM (concept 1)
+    - [ ] `document.body.appendChild()` 
+- [ ] Make a base model for the animal cell 
+  - [ ] make it into a spherical shape
+  - [ ] base color of the base
+    - [ ] hex code: #5d9aa8
+  - [ ] set up camera + rotation of the basic model
+    - [ ] uses function (concept 2)
+
+* **Deadline** - 03/16/2026
+- [ ] Make the cell membrane
+  - [ ] another spherical shape within the bigger one
+    - [ ] make only the radius of it show
+  - [ ] hex code: #3e6b75
+- [ ] Create two more organelles (all uses spherical shapes) 
+  - [ ] Nucleus (hex code: #3e5175)
+    - [ ] if possible create the nucleolus and nuclear membrane 
+  - [ ] vaculoes (hex code: #96b1e3)
+     
+* **Deadline** - 04/06/2026
+- [ ] Finish rest of the MAIN organelles
+  - [ ] mitochondrian
+  - [ ] smooth endoplasmic reticulum
+  - [ ] rough endoplasmic reticulum
+  - [ ] lysosome
+  - [ ] cytoplasm 
+
+#### Beyond MVP
+- [ ] Clickable organelles 
+  - [ ] explains the function of those organelle
+- [ ] Looping animations demonstrating the process of the organelles within the cell
+- [ ] Plant cell model
+  - [ ] linking page to the animal cell model (easy to go back and forth)
+  - [ ] clickable organelles
+    - [ ] explains the functions of those organelles
+- [ ] Adding detail to the organelles that were already created
+  - [ ] more shapes within the shapes
+- [ ] organize the organelles within an array (concept 3)
+- [ ] make a background, so the cell model can pop out more and be more visual appealing 
+
+As you can see above I ended up making a quite detailed and thoughtout plan, though I had one issue. Orginally I had a good pacing when it comes to following my plan until...
+
+## Challenges 
+As I was coding I was able to get the basic setup down. I then tried to code some testing shapes to ensure that my code works and appears fine, but then when I pressed `http-server`, nothing would come up. 
 
 [Previous](entry03.md) | [Next](entry05.md)
 
