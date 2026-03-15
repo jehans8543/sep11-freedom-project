@@ -58,7 +58,6 @@ From it I found a [three.js sandbox](https://hofk.de/main/threejs/sandboxthreep/
 
 
 
-
 [Previous](entry03.md) | [Next](entry05.md)
 
 [Home](../README.md)
