@@ -135,6 +135,11 @@ I tried countless different installation techniques that was said in the three.j
 In terms of the EDP process I believed that during this time I finisehd stage 4 of the EDP process which is planning the most promising solution, which in my case is creating an MVP Plan, with various things to check off and do, especially after I got my basic project done. As of right now we are on _**stage 5**_ of the EDP process which is creating a prototype. Though I am experiencing some issues as of right now, I do have much of the basic code down on how to _setup_ my animal cell, which makes me prepared and semi on-track with my plan. As you can see my end date for when my MVP should be done is on **April 8th, 2026**, meaning by then I should be ready to move onto stage  of the EDP process which is to test out my project and see what else I can add (aka moving to the beyond MVP steps).
 
 ## Skills 
+### Flexibility 
+One of the skill that I gained was being _flexible_, despite the installation for my three.js working, I didn't let that stop me from coding completely. If I were to spend so much of my coding time on trying to the tackle the issue, then I would be even more behind then I already am. Therefore, I decided to still code in the mean time so I can still stay on task, while also spending a little time here and there to try and tackle my three.js installation issue. 
+
+### Research 
+Another skill I gained within this time is _research_. The reason why I believe that I gained reseraching as a skill, is becaues I was able to find new _sources_ and ways to understand and tinker with my tool better. Using the three.js forum allows me to analyze the different ways that others code the same thing as me, or find the asnwer to some of the questions that I have. While reseraching about the three.js sandbox allowed me to further understand bits and pieces of my code, and see why they are neccesarry to paint the bigger picture. 
 
 [Previous](entry03.md) | [Next](entry05.md)
 
