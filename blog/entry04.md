@@ -56,6 +56,9 @@ As you can see above the code looks _extremely_ complicated, therefore in order 
 
 From it I found a [three.js sandbox](https://hofk.de/main/threejs/sandboxthreep/), the sandbox allowed me to test out different dimensions, and more functions on how to code the sphere for example:
 
+![](../tool/sandbox.png)
+
+As you can see above the sandbox, breaks down the code into diffent inputs so you can take the time to understand what each piece of code does, which is what I spent much of my time doing. 
 
 
 [Previous](entry03.md) | [Next](entry05.md)
