@@ -60,6 +60,13 @@ From it I found a [three.js sandbox](https://hofk.de/main/threejs/sandboxthreep/
 
 As you can see above the sandbox, breaks down the code into diffent inputs so you can take the time to understand what each piece of code does, which is what I spent much of my time doing. 
 
+## Offically Starting the Project
+On our next freedom Monday Mr. Mueller told us that we had to offically start coding the project. Though there was one step before we can start hands on coding, which is making a _plan_ for our MVP.
+
+I decided that my MVP would have the basic information of what an animal cell should therefore I decided to make my MVP plan based on that thought process.
+
+### MVP Plan
+
 
 [Previous](entry03.md) | [Next](entry05.md)
 
