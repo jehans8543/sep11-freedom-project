@@ -136,7 +136,24 @@ In terms of the EDP process I believed that during this time I finisehd stage 4 
 
 ## Skills 
 ### Flexibility 
-One of the skill that I gained was being _flexible_, despite the installation for my three.js working, I didn't let that stop me from coding completely. If I were to spend so much of my coding time on trying to the tackle the issue, then I would be even more behind then I already am. Therefore, I decided to still code in the mean time so I can still stay on task, while also spending a little time here and there to try and tackle my three.js installation issue. 
+One of the skill that I gained was being _flexible_, despite the installation for my three.js working, I didn't let that stop me from coding completely. If I were to spend so much of my coding time on trying to the tackle the issue, then I would be even more behind then I already am. Therefore, I decided to still code in the mean time so I can still stay on task, while also spending a little time here and there to try and tackle my three.js installation issue. For example being able to further learn and enhance the code for the base of my hemisphere:
+
+``` JS
+const halfSphere = new THREE.Mesh(geometry, material);
+scene.add(halfSphere);
+const radius = 5;
+const radialSegments = 32;
+
+const hemiSphereGeom = new THREE.SphereGeometry(radius, radialSegments, Math.round(radialSegments / 4), 0, Math.PI * 2, 0, Math.PI / 2);
+
+const capGeom = new THREE.CircleGeometry(radius, radialSegments);
+capGeom.rotateX(Math.PI * 0.5); 
+
+const material = new THREE.MeshStandardMaterial({ color: "blue", side: THREE.DoubleSide });
+
+const hemiSphereMesh = new THREE.Mesh(hemiSphereGeom, material);
+const capMesh = new THREE.Mesh(capGeom, material);
+```
 
 ### Research 
 Another skill I gained within this time is _research_. The reason why I believe that I gained reseraching as a skill, is becaues I was able to find new _sources_ and ways to understand and tinker with my tool better. Using the three.js forum allows me to analyze the different ways that others code the same thing as me, or find the asnwer to some of the questions that I have. While reseraching about the three.js sandbox allowed me to further understand bits and pieces of my code, and see why they are neccesarry to paint the bigger picture. 
