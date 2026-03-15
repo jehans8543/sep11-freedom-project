@@ -10,7 +10,7 @@ In terms of my knowledge of [three.js](https://threejs.org/) I would say that I 
 Since the last blog I tinkered with my tool quite a bit before I started my project, though the tinkering that I did this time correlates directly to my project, hence I plan to use this code from tinkering onto my actual project.
 
 The code that I tinkered was learning how to make a half sphere. The reason why I wanted to learn how to make a half sphere, is because diagrams of animal cells are typically depicted to be a half sphere, for example: 
-
+![](tool/cell.png)
 
 [Previous](entry03.md) | [Next](entry05.md)
 
