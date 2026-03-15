@@ -12,7 +12,6 @@ Since the last blog I tinkered with my tool quite a bit before I started my proj
 The code that I tinkered was learning how to make a half sphere. The reason why I wanted to learn how to make a half sphere, is because diagrams of animal cells are typically depicted to be a half sphere, for example: 
 
 
-V
 [Previous](entry03.md) | [Next](entry05.md)
 
 [Home](../README.md)
