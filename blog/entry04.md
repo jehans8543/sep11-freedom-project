@@ -156,7 +156,10 @@ const capMesh = new THREE.Mesh(capGeom, material);
 ```
 
 ### Research 
-Another skill I gained within this time is _research_. The reason why I believe that I gained researching as a skill, is because I was able to find new _sources_ and ways to understand and tinker with my tool better. Using the three.js forum allows me to analyze the different ways that others code the same thing as me, or find the answer to some of the questions that I have. While researching the three.js sandbox allowed me to further understand bits and pieces of my code, and see why they are necessary to paint the bigger picture. 
+Another skill I gained within this time is _research_. The reason why I believe that I gained researching as a skill, is because I was able to find new _sources_ and ways to understand and tinker with my tool better. Using the three.js forum allows me to analyze the different ways that others code the same thing as me, or find the answer to some of the questions that I have. While researching the three.js sandbox allowed me to further understand bits and pieces of my code, and see why they are necessary to paint the bigger picture. Which can be shown with my tinkering with the sandbox:
+
+![](../tool/blue.png)
+
 
 [Previous](entry03.md) | [Next](entry05.md)
 
