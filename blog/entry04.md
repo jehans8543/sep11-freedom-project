@@ -112,7 +112,29 @@ I decided that my MVP would have the basic information of what an animal cell sh
 As you can see above I ended up making a quite detailed and thoughtout plan, though I had one issue. Orginally I had a good pacing when it comes to following my plan until...
 
 ## Challenges 
-As I was coding I was able to get the basic setup down. I then tried to code some testing shapes to ensure that my code works and appears fine, but then when I pressed `http-server`, nothing would come up. 
+As I was coding I was able to get the basic setup down, trying to create a basic shape to ensure that my code was behaving as it should:
+
+``` JS
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+const renderer = new THREE.WebGLRenderer();
+renderer.setSize(window.innerWidth, window.innerHeight);
+document.body.appendChild(renderer.domElement);
+
+const geometry = new THREE.BoxGeometry(); // Cube shape
+const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 }); // Green color
+const cube = new THREE.Mesh(geometry, material);
+scene.add(cube);
+```
+
+This was the beginning code that I had, and as I entered `http-server` and my nothing would show up, all I would see is a blank screen. Intially I thought it was a problem with my IDE, but when I went into my other works and I did `http-server`, it was working just fine for them. Then I started to think that there was something wrong with my three.js installation. I tried multiple different ways on how to fix it, but none of it seemed to work.
+
+I tried countless different installation techniques that was said in the three.js installation page, but none of them seemed to work. I am currently _still_ struggling with this issue, therefore for now I decided to to tinker a bit and learn three.js code more directed towards my project, while I try to tackle the three.js setup in my ide. 
+
+## EDP 
+In terms of the EDP process I believed that during this time I finisehd stage 4 of the EDP process which is planning the most promising solution, which in my case is creating an MVP Plan, with various things to check off and do, especially after I got my basic project done. As of right now we are on _**stage 5**_ of the EDP process which is creating a prototype. Though I am experiencing some issues as of right now, I do have much of the basic code down on how to _setup_ my animal cell, which makes me prepared and semi on-track with my plan. As you can see my end date for when my MVP should be done is on **April 8th, 2026**, meaning by then I should be ready to move onto stage  of the EDP process which is to test out my project and see what else I can add (aka moving to the beyond MVP steps).
+
+## Skills 
 
 [Previous](entry03.md) | [Next](entry05.md)
 
