@@ -2,9 +2,9 @@
 ##### 03/15/2026
 
 ## Progress Check 
-It's been a month since my last blog, and since then I have made a fair amount of progress. I offically started working on my project. Though I am nowhere near done researching my tool, it was time to start the project, and I figured that I can just reserach along the way. 
+It's been a month since my last blog, and since then I have made a fair amount of progress. I officially started working on my project. Though I am nowhere near done researching my tool, it was time to start the project, and I figured that I can just research along the way. 
 
-In terms of my knowledge of [three.js](https://threejs.org/) I would say that I know enough to get started. With the knowledge that I have of my tool, I believe that I can reach an MVP of my project, or at least almost get there. If I wanted to add details and fully create my project as throughly as my plan that I made in the beginning of the year, I would have to spend more time researching my tool, but as I said earlier, I can just do that along the way. 
+In terms of my knowledge of [three.js](https://threejs.org/) I would say that I know enough to get started. With the knowledge that I have of my tool, I believe that I can reach an MVP of my project, or at least almost get there. If I wanted to add details and fully create my project as thoroughly as my plan that I made in the beginning of the year, I would have to spend more time researching my tool, but as I said earlier, I can just do that along the way. 
 
 ## What I learned Since the Last Blog
 Since the last blog I tinkered with my tool quite a bit before I started my project, though the tinkering that I did this time correlates directly to my project, hence I plan to use this code from tinkering onto my actual project.
@@ -12,7 +12,7 @@ Since the last blog I tinkered with my tool quite a bit before I started my proj
 The code that I tinkered was learning how to make a half sphere. The reason why I wanted to learn how to make a half sphere, is because the diagrams of animal cells are typically depicted to be a half sphere, for example: 
 ![](../tool/cell.png)
 
-The image above is what I plan to use a refrence going forward, when it comes to the _structure_ of my model using three.js. 
+The image above is what I plan to use as a refrence going forward, when it comes to the _structure_ of my model using three.js. 
 
 Here is my **attempt** ad coding a half sphere using three.js:
 
@@ -58,12 +58,12 @@ From it I found a [three.js sandbox](https://hofk.de/main/threejs/sandboxthreep/
 
 ![](../tool/sandbox.png)
 
-As you can see above the sandbox, breaks down the code into diffent inputs so you can take the time to understand what each piece of code does, which is what I spent much of my time doing. 
+As you can see above the sandbox breaks down the code into different inputs so you can take the time to understand what each piece of code does, which is what I spent much of my time doing. 
 
-## Offically Starting the Project
-On our next freedom Monday Mr. Mueller told us that we had to offically start coding the project. Though there was one step before we can start hands on coding, which is making a _plan_ for our MVP.
+## Officially Starting the Project
+On our next freedom Monday Mr. Mueller told us that we had to officially start coding the project. Though there was one step before we can start hands on coding, which is making a _plan_ for our MVP.
 
-I decided that my MVP would have the basic information of what an animal cell should therefore I decided to make my MVP plan based on that thought process.
+I decided that my MVP would have the basic information of what an animal cell should be, therefore I decided to make my MVP plan based on that thought process.
 
 ### MVP Plan
 
@@ -86,7 +86,7 @@ I decided that my MVP would have the basic information of what an animal cell sh
 - [ ] Create two more organelles (all uses spherical shapes) 
   - [ ] Nucleus (hex code: #3e5175)
     - [ ] if possible create the nucleolus and nuclear membrane 
-  - [ ] vaculoes (hex code: #96b1e3)
+  - [ ] vacuoles (hex code: #96b1e3)
      
 * **Deadline** - 04/06/2026
 - [ ] Finish rest of the MAIN organelles
@@ -109,7 +109,7 @@ I decided that my MVP would have the basic information of what an animal cell sh
 - [ ] organize the organelles within an array (concept 3)
 - [ ] make a background, so the cell model can pop out more and be more visual appealing 
 
-As you can see above I ended up making a quite detailed and thoughtout plan, though I had one issue. Orginally I had a good pacing when it comes to following my plan until...
+As you can see above I ended up making a quite detailed and thought out plan, though I had one issue. Originally I had good pacing when it came to following my plan until...
 
 ## Challenges 
 As I was coding I was able to get the basic setup down, trying to create a basic shape to ensure that my code was behaving as it should:
@@ -127,16 +127,16 @@ const cube = new THREE.Mesh(geometry, material);
 scene.add(cube);
 ```
 
-This was the beginning code that I had, and as I entered `http-server` and my nothing would show up, all I would see is a blank screen. Intially I thought it was a problem with my IDE, but when I went into my other works and I did `http-server`, it was working just fine for them. Then I started to think that there was something wrong with my three.js installation. I tried multiple different ways on how to fix it, but none of it seemed to work.
+This was the beginning code that I had, and as I entered `http-server` and nothing would show up, all I would see was a blank screen. Initially I thought it was a problem with my IDE, but when I went into my other works and I did `http-server`, it was working just fine for them. Then I started to think that there was something wrong with my three.js installation. I tried multiple different ways on how to fix it, but none of it seemed to work.
 
-I tried countless different installation techniques that was said in the three.js installation page, but none of them seemed to work. I am currently _still_ struggling with this issue, therefore for now I decided to to tinker a bit and learn three.js code more directed towards my project, while I try to tackle the three.js setup in my ide. 
+I tried countless different installation techniques that were mentioned in the three.js installation page, but none of them seemed to work. I am currently _still_ struggling with this issue, therefore for now I decided to to tinker a bit and learn three.js code more directed towards my project, while I try to tackle the three.js setup in my mind. 
 
 ## EDP 
-In terms of the EDP process I believed that during this time I finisehd stage 4 of the EDP process which is planning the most promising solution, which in my case is creating an MVP Plan, with various things to check off and do, especially after I got my basic project done. As of right now we are on _**stage 5**_ of the EDP process which is creating a prototype. Though I am experiencing some issues as of right now, I do have much of the basic code down on how to _setup_ my animal cell, which makes me prepared and semi on-track with my plan. As you can see my end date for when my MVP should be done is on **April 8th, 2026**, meaning by then I should be ready to move onto stage  of the EDP process which is to test out my project and see what else I can add (aka moving to the beyond MVP steps).
+In terms of the EDP process I believed that during this time I finished stage 4 of the EDP process which is planning the most promising solution, which in my case is creating an MVP Plan, with various things to check off and do, especially after I got my basic project done. As of right now we are on _**stage 5**_ of the EDP process which is creating a prototype. Though I am experiencing some issues as of right now, I do have much of the basic code down on how to _setup_ my animal cell, which makes me prepared and semi on-track with my plan. As you can see my end date for when my MVP should be done is on **April 8th, 2026**, meaning by then I should be ready to move onto stage  of the EDP process which is to test out my project and see what else I can add (aka moving to the beyond MVP steps).
 
 ## Skills 
 ### Flexibility 
-One of the skill that I gained was being _flexible_, despite the installation for my three.js working, I didn't let that stop me from coding completely. If I were to spend so much of my coding time on trying to the tackle the issue, then I would be even more behind then I already am. Therefore, I decided to still code in the mean time so I can still stay on task, while also spending a little time here and there to try and tackle my three.js installation issue. For example being able to further learn and enhance the code for the base of my hemisphere:
+One of the skills that I gained was being _flexible_, despite the installation for my three.js working, I didn't let that stop me from coding completely. If I were to spend so much of my coding time on trying to tackle the issue, then I would be even more behind then I already am. Therefore, I decided to still code in the meantime so I can still stay on task, while also spending a little time here and there to try and tackle my three.js installation issue. For example being able to further learn and enhance the code for the base of my hemisphere:
 
 ``` JS
 const halfSphere = new THREE.Mesh(geometry, material);
@@ -156,8 +156,9 @@ const capMesh = new THREE.Mesh(capGeom, material);
 ```
 
 ### Research 
-Another skill I gained within this time is _research_. The reason why I believe that I gained reseraching as a skill, is becaues I was able to find new _sources_ and ways to understand and tinker with my tool better. Using the three.js forum allows me to analyze the different ways that others code the same thing as me, or find the asnwer to some of the questions that I have. While reseraching about the three.js sandbox allowed me to further understand bits and pieces of my code, and see why they are neccesarry to paint the bigger picture. 
+Another skill I gained within this time is _research_. The reason why I believe that I gained researching as a skill, is because I was able to find new _sources_ and ways to understand and tinker with my tool better. Using the three.js forum allows me to analyze the different ways that others code the same thing as me, or find the answer to some of the questions that I have. While researching the three.js sandbox allowed me to further understand bits and pieces of my code, and see why they are necessary to paint the bigger picture. 
 
 [Previous](entry03.md) | [Next](entry05.md)
 
 [Home](../README.md)
+
