@@ -157,11 +157,12 @@ animate();
   const cube = new THREE.Mesh(geometry, material);
   scene.add(cube);
 ```
-  * When I tried running the test I encountered an error:
-    * The code from the three.js wouldn't appear
-     * Tried the code in different IDE's (jsbin, pickcode, and etc.) and it still wouldn't appear
-     * tried installing three.js again and still didn't work
-     * my next step is to try to install it using a npm, since it doesn't work the usually way by using a header
+
+ * When I tried running the test I encountered an error:
+   * The code from the three.js wouldn't appear
+    * Tried the code in different IDE's (jsbin, pickcode, and etc.) and it still wouldn't appear
+    * tried installing three.js again and still didn't work
+    * my next step is to try to install it using a npm, since it doesn't work the usually way by using a header
 
 ### 03/16/2026
 * Working on organelles:
