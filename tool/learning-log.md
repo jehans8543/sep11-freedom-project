@@ -145,7 +145,8 @@ animate();
   * I started the basic set up for my project
   * set up scene
   * created a green sphere for testing:
-  ``` JS
+ 
+``` JS 
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
   const renderer = new THREE.WebGLRenderer();
@@ -181,11 +182,3 @@ animate();
 
 
 
-
-<!--
-* Links you used today (websites, videos, etc)
-* Things you tried, progress you made, etc
-* Challenges, a-ha moments, etc
-* Questions you still have
-* What you're going to try next
--->
