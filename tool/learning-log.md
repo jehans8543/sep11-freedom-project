@@ -165,7 +165,7 @@ animate();
     * tried installing three.js again and still didn't work
     * my next step is to try to install it using a npm, since it doesn't work the usually way by using a header
 
-### 03/16/2026
+### 03/22/2026
 * Working on organelles:
   * Centrioles
     * in order to make a centriole, I would have to make a cylinder with a hole in the inside of it
