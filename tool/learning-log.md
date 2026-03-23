@@ -180,5 +180,9 @@ animate();
     ```
     * For the rest of my learning for this week, I tried playing around with a cylinder and how to make it look like the centriole, which I didn't achieve this time aorund, but I feel as if I am halfway done to getting there.
 
-
-
+### 03/23/2026
+* In order to use more advanced features for three.js, which I will eventually have to get into to code the miniature parts (organelles) I had to download node 
+* From what I researched it is possible to just use a CDN installer for three.js, but it won't function for advanced code, due to security reasons due to the complexity of the code
+* The website that I use to download [node.js](https://nodejs.org/en/download), is extremely vague so I was struggling on what it is I have to do, and where in my IDE I would have to install the code.
+* Another thing that I had to do is figure out what kind of shapes that I would have to make in order to code the endoplasmic reticulum (smmoth & rough)
+  * for now I am deciding to use a cylinder and heavily shriken it, and possibly enlongate it in the way that I want it.  
