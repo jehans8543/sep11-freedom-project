@@ -104,8 +104,49 @@ makeMitochondrion( 0.3,  1.1, -0.5, -0.3);
     makeSphere(0.13, '#d4b06a', { x:  1.0,  y:  0.8,  z: -0.6 }, 0.90);
 function animate() {
   requestAnimationFrame(animate);
+
+  if (isDragging) {
+    scene.rotation.y += rotSpeedY;
+    scene.rotation.x += rotSpeedX;
+  } else {
+    scene.rotation.y += 0.003 + rotSpeedY;
+    rotSpeedY *= 0.92;
+    rotSpeedX *= 0.92;
+    scene.rotation.x += rotSpeedX;
+  }
+
   renderer.render(scene, camera);
 }
+let isDragging = false;
+let prevMouseX = 0, prevMouseY = 0;
+let rotSpeedX = 0, rotSpeedY = 0;
+
+document.addEventListener('mousedown', e => {
+  isDragging = true;
+  prevMouseX = e.clientX;
+  prevMouseY = e.clientY;
+});
+document.addEventListener('mouseup',   () => isDragging = false);
+document.addEventListener('mousemove', e => {
+  if (!isDragging) return;
+  rotSpeedY = (e.clientX - prevMouseX) * 0.005;
+  rotSpeedX = (e.clientY - prevMouseY) * 0.005;
+  prevMouseX = e.clientX;
+  prevMouseY = e.clientY;
+});
+document.addEventListener('touchstart', e => {
+  isDragging = true;
+  prevMouseX = e.touches[0].clientX;
+  prevMouseY = e.touches[0].clientY;
+});
+document.addEventListener('touchend',   () => isDragging = false);
+document.addEventListener('touchmove',  e => {
+  if (!isDragging) return;
+  rotSpeedY = (e.touches[0].clientX - prevMouseX) * 0.005;
+  rotSpeedX = (e.touches[0].clientY - prevMouseY) * 0.005;
+  prevMouseX = e.touches[0].clientX;
+  prevMouseY = e.touches[0].clientY;
+});
 animate();
 
 
