@@ -54,6 +54,22 @@ function makeTube(curve, color, tubularRadius = 0.04) {
   return mesh;
 }
 
+const cellBody = makeSphere(2.2, '#5d9aa8', { x: 0, y: 0, z: 0 }, 0.18);
+
+const cellMembrane = makeSphere(2.2, '#3e6b75', { x: 0, y: 0, z: 0 }, 0.55, true);
+
+makeSphere(0.30, '#96b1e3', { x:  1.1, y:  0.7, z: 0.2 }, 0.80);
+makeSphere(0.22, '#96b1e3', { x: -0.9, y: -0.8, z: 0.5 }, 0.80);
+
+function makeMitochondrion(x, y, z, rx = 0) {
+  const m = makeSphere(0.22, '#c0785a', { x, y, z }, 0.92);
+  m.scale.set(1.8, 1.0, 1.0);
+  m.rotation.z = rx;
+}
+makeMitochondrion( 0.85, -0.5,  0.6);
+makeMitochondrion(-1.1,  0.6,  0.3, 0.4);
+makeMitochondrion( 0.3,  1.1, -0.5, -0.3);
+
 animate();
 
 
