@@ -66,9 +66,21 @@ function makeMitochondrion(x, y, z, rx = 0) {
   m.scale.set(1.8, 1.0, 1.0);
   m.rotation.z = rx;
 }
+
 makeMitochondrion( 0.85, -0.5,  0.6);
 makeMitochondrion(-1.1,  0.6,  0.3, 0.4);
 makeMitochondrion( 0.3,  1.1, -0.5, -0.3);
+}
+{
+  const curve = new THREE.CatmullRomCurve3([
+    new THREE.Vector3(-0.6,  0.5,  1.0),
+    new THREE.Vector3(-1.2,  0.2,  0.5),
+    new THREE.Vector3(-1.4, -0.3,  0.0),
+    new THREE.Vector3(-1.0, -0.8, -0.4),
+    new THREE.Vector3(-0.4, -1.0,  0.2),
+  ]);
+  makeTube(curve, '#7a9e7a', 0.055);
+}
 
 animate();
 
