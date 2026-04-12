@@ -145,7 +145,6 @@ animate();
   * I started the basic set up for my project
   * set up scene
   * created a green sphere for testing:
-
   ``` JS
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
@@ -158,25 +157,18 @@ animate();
   const cube = new THREE.Mesh(geometry, material);
   scene.add(cube);
 ```
+  * When I tried running the test I encountered an error:
+    * The code from the three.js wouldn't appear
+     * Tried the code in different IDE's (jsbin, pickcode, and etc.) and it still wouldn't appear
+     * tried installing three.js again and still didn't work
+     * my next step is to try to install it using a npm, since it doesn't work the usually way by using a header
 
-* When I tried running the test I encountered an error:
-  * The code from the three.js wouldn't appear
-    * Tried the code in different IDE's (jsbin, pickcode, and etc.) and it still wouldn't appear
-    * tried installing three.js again and still didn't work
-    * my next step is to try to install it using a npm, since it doesn't work the usually way by using a header
 
-### 03/16/2026
-* Working on organelles:
-  * Centrioles
-    * in order to make a centriole, I would have to make a cylinder with a hole in the inside of it
-    * I would also have to give the centriole texture around the cylinder, but first I would have to learn how to make a cylinder which is kind of similar to how to make a sphere
-    * I used the [three.js reference](https://threejs.org/docs/#CylinderGeometry)
-    * my cylinder looked something like this:
-    ``` JS
-    const geometry = new THREE.CylinderGeometry( 5, 5, 20, 32 );
-    const material = new THREE.MeshBasicMaterial( { color: 0xffff00 } );
-    const cylinder = new THREE.Mesh( geometry, material );
-    scene.add( cylinder );
-    ```
-    * For the rest of my learning for this week, I tried playing around with a cylinder and how to make it look like the centriole, which I didn't achieve this time aorund, but I feel as if I am halfway done to getting there.
 
+<!--
+* Links you used today (websites, videos, etc)
+* Things you tried, progress you made, etc
+* Challenges, a-ha moments, etc
+* Questions you still have
+* What you're going to try next
+-->
