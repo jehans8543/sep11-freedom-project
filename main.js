@@ -1,3 +1,4 @@
+import * as THREE from "https://unpkg.com/three@0.160.0/build/three.module.js";
 
 const scene = new THREE.Scene();
 
@@ -70,7 +71,7 @@ function makeMitochondrion(x, y, z, rx = 0) {
 makeMitochondrion( 0.85, -0.5,  0.6);
 makeMitochondrion(-1.1,  0.6,  0.3, 0.4);
 makeMitochondrion( 0.3,  1.1, -0.5, -0.3);
-}
+
 {
   const curve = new THREE.CatmullRomCurve3([
     new THREE.Vector3(-0.6,  0.5,  1.0),
@@ -98,10 +99,13 @@ makeMitochondrion( 0.3,  1.1, -0.5, -0.3);
     makeSphere(0.028, '#c8a0c8', { x: pt.x + 0.06, y: pt.y + 0.06, z: pt.z });
   }
 }
-makeSphere(0.14, '#d4b06a', { x:  0.5, y: -1.0,  z:  0.8 }, 0.90);
-makeSphere(0.11, '#d4b06a', { x: -0.6,  y:  1.0,  z: -0.7 }, 0.90);
-makeSphere(0.13, '#d4b06a', { x:  1.0,  y:  0.8,  z: -0.6 }, 0.90);
-
+    makeSphere(0.14, '#d4b06a', { x:  0.5, y: -1.0,  z:  0.8 }, 0.90);
+    makeSphere(0.11, '#d4b06a', { x: -0.6,  y:  1.0,  z: -0.7 }, 0.90);
+    makeSphere(0.13, '#d4b06a', { x:  1.0,  y:  0.8,  z: -0.6 }, 0.90);
+function animate() {
+  requestAnimationFrame(animate);
+  renderer.render(scene, camera);
+}
 animate();
 
 
