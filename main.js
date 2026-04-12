@@ -82,6 +82,26 @@ makeMitochondrion( 0.3,  1.1, -0.5, -0.3);
   makeTube(curve, '#7a9e7a', 0.055);
 }
 
+{
+  const curve = new THREE.CatmullRomCurve3([
+    new THREE.Vector3( 0.8,  0.5,  0.9),
+    new THREE.Vector3( 1.3,  0.1,  0.4),
+    new THREE.Vector3( 1.5, -0.4, -0.2),
+    new THREE.Vector3( 1.0, -0.9, -0.5),
+    new THREE.Vector3( 0.4, -1.1,  0.1),
+  ]);
+  makeTube(curve, '#9e7a9e', 0.055);
+
+  for (let i = 0; i <= 20; i++) {
+    const t  = i / 20;
+    const pt = curve.getPoint(t);
+    makeSphere(0.028, '#c8a0c8', { x: pt.x + 0.06, y: pt.y + 0.06, z: pt.z });
+  }
+}
+makeSphere(0.14, '#d4b06a', { x:  0.5, y: -1.0,  z:  0.8 }, 0.90);
+makeSphere(0.11, '#d4b06a', { x: -0.6,  y:  1.0,  z: -0.7 }, 0.90);
+makeSphere(0.13, '#d4b06a', { x:  1.0,  y:  0.8,  z: -0.6 }, 0.90);
+
 animate();
 
 
