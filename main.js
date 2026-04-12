@@ -19,15 +19,27 @@ const geometry = new THREE.SphereGeometry(
   Math.PI / 2
 );
 
-const material = new THREE.MeshBasicMaterial({
-  color: 0x88ccff,
+const material = new THREE.MeshStandardMaterial({
+  color: 0x66c2ff,
+  transparent: true,
+  opacity: 0.85,
+  roughness: 0.6,
+  metalness: 0.0,
   side: THREE.DoubleSide
 });
+
+const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
+directionalLight.position.set(5, 5, 5);
+scene.add(directionalLight);
+
+const light = new THREE.AmbientLight(0xffffff, 1);
+scene.add(light);
+
 const halfSphere = new THREE.Mesh(geometry, material);
 scene.add(halfSphere);
 
 const outlineMaterial = new THREE.MeshBasicMaterial({
-  color: 0x000000,
+  color: 0x88ccff,
   wireframe: true
 });
 const outline = new THREE.Mesh(geometry, outlineMaterial);
@@ -74,5 +86,6 @@ function animate() {
   requestAnimationFrame(animate);
   renderer.render(scene, camera);
 }
+
 
 animate();
