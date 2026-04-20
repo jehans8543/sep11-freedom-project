@@ -92,7 +92,16 @@ In terms of the EDP process, I believe that I finished stage 5 of the EDP proces
 
 ## Skills 
 ### Acceptance 
-Last year my MVP was at a quite good stage, I was extremely satisified with the result that I got with the MVP. 
+My MVP for SEP10 was at a quite good stage, I was extremely satisified with the result that I got with the MVP, since not only was it visually appleasing, but it was also heavily functional. Hence, for my beyond MVP all I had to do is minor technical tweaks that most people won't notice. This year its compeltely different, my MVP looks like straight up trash and there's so much to fix. 
+
+And when I saw everyone else's MVP it felt like it was so much better than mine, and I felt terrible about myself because of that. I was ready to restart the whole thing, until a classmate of mine told me that a MVP is supposed to be the bare minimum of your project that would recieve full credit even if it those look like striaght trash. It's not like it was due now and I still had so much opportunites to revise it. After hearing this I felt much better about my MVP, knowing that it's normal for my project to look like this at this stage of the process. I was able to learn that **acceptance** is an important skill if you want to improve on someonething or yourself. 
+
+## Time Management
+I beleive the reason why my MVP looks the way it does is because I procrastinated my whole project. We were given the whole Spring break to work on our MVP and I waited till the last day to work on it, which was a completely bad idea, which I do not reccomend for anyone to do. Since I had such limited time to work on it, my whole MVP ended up being rusehd which is why it looks like the way it did. 
+
+I was able to learn the hard way that procrastination, does not get you anywhere, in fact it heavily detriments your process since you have less time to work on your project and its important details since you are more focused on getting it complete. During SEP10 I followed my timeline quite well, and was able to finsh my MVP quite early, which allowed it to look quite polished without even getting to the beyond MVP parts. 
+
+Therefore, I learned my lesson this year, which is to never to procrastinate a year long process, especially the coding part of it. 
 
 
 
