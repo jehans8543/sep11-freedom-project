@@ -96,7 +96,7 @@ My MVP for SEP10 was at a quite good stage. I was extremely satisfied with the r
 
 And when I saw everyone else's MVP it felt like it was so much better than mine, and I felt terrible about myself because of that. I was ready to restart the whole thing, until a classmate of mine told me that a MVP is supposed to be the bare minimum of your project that would receive full credit even if it looks like straight trash. It's not like it was due now and I still had so many opportunities to revise it. After hearing this I felt much better about my MVP, knowing that it's normal for my project to look like this at this stage of the process. I was able to learn that **acceptance** is an important skill if you want to improve on something or yourself. 
 
-## Time Management
+### Time Management
 I believe the reason why my MVP looks the way it does is because I procrastinated my whole project. We were given the whole Spring break to work on our MVP and I waited till the last day to work on it, which was a completely bad idea, which I do not recommend for anyone to do. Since I had such limited time to work on it, my whole MVP ended up being rushed which is why it looks the way it did. 
 
 I was able to learn the hard way that procrastination does not get you anywhere, in fact it heavily detrimental to your process since you have less time to work on your project and its important details since you are more focused on getting it complete. During SEP10 I followed my timeline quite well, and was able to finish my MVP quite early, which allowed it to look quite polished without even getting to the beyond MVP parts. 
