@@ -76,7 +76,7 @@ document.addEventListener("mousemove", (e) => {
     prevMouseX = e.clientX;
     prevMouseY = e.clientY;
 ```
-Up above is a snippet of my code that uses both DOM and functions. I was able to get the basic structure of the code with my basic knowledge, though when it came to the exclusive _three.js_ code, I was able to use their [documentation tab](https://threejs.org/docs/), which helped me immensely with all the new code that I had to learn. 
+Up above is a snippet of my code that uses both DOM and functions. I was able to get the basic structure of the code with my basic knowledge, though when it came to the exclusive _three.js_ code, I was able to use their [documentation tab](https://threejs.org/docs/), which helped me immensely with all the new code that I had to learn. In order to make some of the organelles stack and overlap each other, I was initially struggling. Then I soon learned to fix it after reading it on a forum after searching up the question: "_how to make shapes ovrelap in three.js_" on googgle. After searching it up it led me to a forum where users had a subsection to talk about three.js: [Three.JS: How to Make Textures Overlap](https://stackoverflow.com/questions/18355417/three-js-how-to-make-textures-overlap-each-other) 
 
 ## Challenges 
 Some of the challenges that I faced while coding my MVP, was that I was able to code it the way I envisioned it. Since the beginning of this project I wanted my animal cell to be shaped as a _half-sphere_ something like this:
