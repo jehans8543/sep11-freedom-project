@@ -88,7 +88,7 @@ Though when it came to actually coding it, it was nearly impossible for a beginn
 Maybe if I have time during my Beyond MVP, I can try again to make it into a half sphere, but it's likely that I won't tackle the issue. Instead, just planning to keep the full sphere and find a way to fix the disappearing organelle issue. 
 
 ## EDP 
-In terms of the EDP process, I believe that I finished stage 5 of the EDP process which is _**Create** a Prototype. The reason why I believe that we finished step 5, is because the MVP in this case is our prototype. The MVP is what we are testing to see what is there to change, remove, or add. Which is the issues that we evaluate during stage 6 of the EDP process which is _**Test** and evaluate the prototype. Since we are moving onto stage 6 of the EDP process this means that we will start incorporating our _Beyond MVP_, trying out best to enhance our MVP and tackle the issues that our current MVP has which I mentioned in the _challenges_ section of this blog. 
+In terms of the EDP process, I believe that I finished stage 5 of the EDP process which is **Create** a Prototype. The reason why I believe that we finished step 5, is because the MVP in this case is our prototype. The MVP is what we are testing to see what is there to change, remove, or add. Which is the issues that we evaluate during stage 6 of the EDP process which is **Test** and evaluate the prototype. Since we are moving onto stage 6 of the EDP process this means that we will start incorporating our _Beyond MVP_, trying out best to enhance our MVP and tackle the issues that our current MVP has which I mentioned in the _challenges_ section of this blog. 
 
 ## Skills 
 ### Acceptance 
