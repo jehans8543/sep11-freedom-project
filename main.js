@@ -1,20 +1,13 @@
 import * as THREE from "https://unpkg.com/three@0.160.0/build/three.module.js";
 
 const scene = new THREE.Scene();
-
-const camera = new THREE.PerspectiveCamera(
-    75,
-    window.innerWidth / window.innerHeight,
-    0.1,
-    1000
-);
+const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
 camera.position.z = 5;
 
 const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
 renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.shadowMap.enabled = true;
-
 document.body.appendChild(renderer.domElement);
 
 const ambientLight = new THREE.AmbientLight(0x334455, 1.2);
@@ -44,7 +37,7 @@ function makeSphere(radius, color, position, opacity = 1, wireframe = false) {
     mesh.castShadow = true;
     mesh.receiveShadow = true;
     scene.add(mesh);
-    return mesh;
+    return mesh; // Added this
 }
 
 function makeTube(curve, color, tubularRadius = 0.04) {
@@ -56,27 +49,21 @@ function makeTube(curve, color, tubularRadius = 0.04) {
 }
 
 const cellBody = makeSphere(2.2, "#5d9aa8", { x: 0, y: 0, z: 0 }, 0.18);
+const cellMembrane = makeSphere( 2.2, "#3e6b75", { x: 0, y: 0, z: 0 }, 0.55, true );
 
-const cellMembrane = makeSphere(
-    2.2,
-    "#3e6b75",
-    { x: 0, y: 0, z: 0 },
-    0.55,
-    true
-);
-
-makeSphere(0.3, "#96b1e3", { x: 1.1, y: 0.7, z: 0.2 }, 0.8);
-makeSphere(0.22, "#96b1e3", { x: -0.9, y: -0.8, z: 0.5 }, 0.8);
+const nucleus = makeSphere(0.3, "#96b1e3", { x: 1.1, y: 0.7, z: 0.2 }, 0.8);
+const nucleolus = makeSphere(0.22, "#96b1e3", { x: -0.9, y: -0.8, z: 0.5 }, 0.8);
 
 function makeMitochondrion(x, y, z, rx = 0) {
     const m = makeSphere(0.22, "#c0785a", { x, y, z }, 0.92);
     m.scale.set(1.8, 1.0, 1.0);
     m.rotation.z = rx;
+    return m; // Added this
 }
 
-makeMitochondrion(0.85, -0.5, 0.6);
-makeMitochondrion(-1.1, 0.6, 0.3, 0.4);
-makeMitochondrion(0.3, 1.1, -0.5, -0.3);
+const mito1 = makeMitochondrion(0.85, -0.5, 0.6);
+const mito2 = makeMitochondrion(-1.1, 0.6, 0.3, 0.4);
+const mito3 = makeMitochondrion(0.3, 1.1, -0.5, -0.3);
 
 {
     const curve = new THREE.CatmullRomCurve3([
@@ -98,23 +85,40 @@ makeMitochondrion(0.3, 1.1, -0.5, -0.3);
         new THREE.Vector3(0.4, -1.1, 0.1),
     ]);
     makeTube(curve, "#9e7a9e", 0.055);
-
     for (let i = 0; i <= 20; i++) {
         const t = i / 20;
         const pt = curve.getPoint(t);
-        makeSphere(0.028, "#c8a0c8", {
-            x: pt.x + 0.06,
-            y: pt.y + 0.06,
-            z: pt.z,
-        });
+        makeSphere(0.028, "#c8a0c8", { x: pt.x + 0.06, y: pt.y + 0.06, z: pt.z, });
     }
 }
-makeSphere(0.14, "#d4b06a", { x: 0.5, y: -1.0, z: 0.8 }, 0.9);
-makeSphere(0.11, "#d4b06a", { x: -0.6, y: 1.0, z: -0.7 }, 0.9);
-makeSphere(0.13, "#d4b06a", { x: 1.0, y: 0.8, z: -0.6 }, 0.9);
+
+const lyso1 = makeSphere(0.14, "#d4b06a", { x: 0.5, y: -1.0, z: 0.8 }, 0.9);
+const lyso2 = makeSphere(0.11, "#d4b06a", { x: -0.6, y: 1.0, z: -0.7 }, 0.9);
+const lyso3 = makeSphere(0.13, "#d4b06a", { x: 1.0, y: 0.8, z: -0.6 }, 0.9);
+
+// --- NEW HOTSPOT STUFF ADDED BELOW ---
+
+const markers = [];
+const ui = document.createElement('div');
+ui.style.cssText = 'position:fixed;top:0;left:0;pointer-events:none;width:100%;height:100%;z-index:100;';
+document.body.appendChild(ui);
+
+function addMarker(mesh, title, info) {
+    const el = document.createElement('div');
+    el.style.cssText = 'position:absolute;width:16px;height:16px;background:white;border:2px solid #5d9aa8;border-radius:50%;cursor:pointer;pointer-events:auto;transform:translate(-50%,-50%);';
+    el.onclick = () => alert(title + ": " + info);
+    ui.appendChild(el);
+    markers.push({ mesh, el });
+}
+
+// Add the popups to your objects
+addMarker(nucleus, "Nucleus", "The control center of the cell containing DNA.");
+addMarker(mito1, "Mitochondria", "Produces energy for the cell.");
+addMarker(lyso1, "Lysosome", "Breaks down waste materials.");
+addMarker(cellBody, "Cytoplasm", "The jelly-like fluid that fills the cell.");
+
 function animate() {
     requestAnimationFrame(animate);
-
     if (isDragging) {
         scene.rotation.y += rotSpeedY;
         scene.rotation.x += rotSpeedX;
@@ -125,27 +129,34 @@ function animate() {
         scene.rotation.x += rotSpeedX;
     }
 
+    // Update Hotspot positions
+    markers.forEach(m => {
+        const pos = new THREE.Vector3();
+        m.mesh.getWorldPosition(pos);
+        pos.project(camera);
+        m.el.style.left = (pos.x * 0.5 + 0.5) * window.innerWidth + 'px';
+        m.el.style.top = (pos.y * -0.5 + 0.5) * window.innerHeight + 'px';
+        m.el.style.opacity = pos.z > 0.8 ? '0' : '1'; // Hide if behind cell
+    });
+
     renderer.render(scene, camera);
 }
-let isDragging = false;
-let prevMouseX = 0,
-    prevMouseY = 0;
-let rotSpeedX = 0,
-    rotSpeedY = 0;
 
-document.addEventListener("mousedown", (e) => {
-    isDragging = true;
-    prevMouseX = e.clientX;
-    prevMouseY = e.clientY;
-});
+// --- REST OF YOUR ORIGINAL EVENT LISTENERS ---
+
+let isDragging = false;
+let prevMouseX = 0, prevMouseY = 0;
+let rotSpeedX = 0, rotSpeedY = 0;
+
+document.addEventListener("mousedown", (e) => { isDragging = true; prevMouseX = e.clientX; prevMouseY = e.clientY; });
 document.addEventListener("mouseup", () => (isDragging = false));
 document.addEventListener("mousemove", (e) => {
     if (!isDragging) return;
     rotSpeedY = (e.clientX - prevMouseX) * 0.005;
     rotSpeedX = (e.clientY - prevMouseY) * 0.005;
-    prevMouseX = e.clientX;
-    prevMouseY = e.clientY;
+    prevMouseX = e.clientX; prevMouseY = e.clientY;
 });
+
 document.addEventListener("touchstart", (e) => {
     isDragging = true;
     prevMouseX = e.touches[0].clientX;
@@ -159,4 +170,5 @@ document.addEventListener("touchmove", (e) => {
     prevMouseX = e.touches[0].clientX;
     prevMouseY = e.touches[0].clientY;
 });
+
 animate();
