@@ -37,7 +37,7 @@ function makeSphere(radius, color, position, opacity = 1, wireframe = false) {
     mesh.castShadow = true;
     mesh.receiveShadow = true;
     scene.add(mesh);
-    return mesh; // Added this
+    return mesh; 
 }
 
 function makeTube(curve, color, tubularRadius = 0.04) {
@@ -58,7 +58,7 @@ function makeMitochondrion(x, y, z, rx = 0) {
     const m = makeSphere(0.22, "#c0785a", { x, y, z }, 0.92);
     m.scale.set(1.8, 1.0, 1.0);
     m.rotation.z = rx;
-    return m; // Added this
+    return m; 
 }
 
 const mito1 = makeMitochondrion(0.85, -0.5, 0.6);
@@ -96,8 +96,6 @@ const lyso1 = makeSphere(0.14, "#d4b06a", { x: 0.5, y: -1.0, z: 0.8 }, 0.9);
 const lyso2 = makeSphere(0.11, "#d4b06a", { x: -0.6, y: 1.0, z: -0.7 }, 0.9);
 const lyso3 = makeSphere(0.13, "#d4b06a", { x: 1.0, y: 0.8, z: -0.6 }, 0.9);
 
-// --- NEW HOTSPOT STUFF ADDED BELOW ---
-
 const markers = [];
 const ui = document.createElement('div');
 ui.style.cssText = 'position:fixed;top:0;left:0;pointer-events:none;width:100%;height:100%;z-index:100;';
@@ -111,7 +109,6 @@ function addMarker(mesh, title, info) {
     markers.push({ mesh, el });
 }
 
-// Add the popups to your objects
 addMarker(nucleus, "Nucleus", "The control center of the cell containing DNA.");
 addMarker(mito1, "Mitochondria", "Produces energy for the cell.");
 addMarker(lyso1, "Lysosome", "Breaks down waste materials.");
@@ -129,20 +126,17 @@ function animate() {
         scene.rotation.x += rotSpeedX;
     }
 
-    // Update Hotspot positions
     markers.forEach(m => {
         const pos = new THREE.Vector3();
         m.mesh.getWorldPosition(pos);
         pos.project(camera);
         m.el.style.left = (pos.x * 0.5 + 0.5) * window.innerWidth + 'px';
         m.el.style.top = (pos.y * -0.5 + 0.5) * window.innerHeight + 'px';
-        m.el.style.opacity = pos.z > 0.8 ? '0' : '1'; // Hide if behind cell
+        m.el.style.opacity = pos.z > 0.8 ? '0' : '1'; 
     });
 
     renderer.render(scene, camera);
 }
-
-// --- REST OF YOUR ORIGINAL EVENT LISTENERS ---
 
 let isDragging = false;
 let prevMouseX = 0, prevMouseY = 0;
