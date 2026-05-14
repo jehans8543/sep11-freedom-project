@@ -1,18 +1,23 @@
-import * as THREE from "https://unpkg.com/three@0.160.0/build/three.module.js";
-
 const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+
+const camera = new THREE.PerspectiveCamera(75,window.innerWidth / window.innerHeight,0.1,1000);
 camera.position.z = 5;
 
-const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+const renderer = new THREE.WebGLRenderer({
+    antialias: true,
+    alpha: true
+});
+
 renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.shadowMap.enabled = true;
 document.body.appendChild(renderer.domElement);
 
+// Ambient light = lights everything evenly
 const ambientLight = new THREE.AmbientLight(0x334455, 1.2);
 scene.add(ambientLight);
 
+// Directional light works kinda like sunlight
 const sunLight = new THREE.DirectionalLight(0x88ccff, 1.5);
 sunLight.position.set(5, 8, 5);
 sunLight.castShadow = true;
@@ -22,16 +27,23 @@ const fillLight = new THREE.PointLight(0x5d9aa8, 1.0, 20);
 fillLight.position.set(-3, -3, 3);
 scene.add(fillLight);
 
+// Helper function so we don't rewrite sphere creation every time
 function makeSphere(radius, color, position, opacity = 1, wireframe = false) {
+    // Creates the sphere shape
     const geometry = new THREE.SphereGeometry(radius, 64, 64);
+// Makes the sphere looks like a mesh
     const material = new THREE.MeshPhongMaterial({
         color: color,
+        // Makes objects transparent 
         transparent: opacity < 1,
         opacity: opacity,
+        // If true, only edges are drawn
         wireframe: wireframe,
         shininess: 60,
         specular: 0x334455,
     });
+
+    // Renders the sphere so it can be seen
     const mesh = new THREE.Mesh(geometry, material);
     mesh.position.set(position.x, position.y, position.z);
     mesh.castShadow = true;
@@ -40,32 +52,41 @@ function makeSphere(radius, color, position, opacity = 1, wireframe = false) {
     return mesh; 
 }
 
+// Creates curved tube structures
 function makeTube(curve, color, tubularRadius = 0.04) {
-    const geometry = new THREE.TubeGeometry(curve, 30, tubularRadius, 8, false);
-    const material = new THREE.MeshPhongMaterial({ color, shininess: 40 });
+    const geometry = new THREE.TubeGeometry(curve,30, tubularRadius,8, false );
+    const material = new THREE.MeshPhongMaterial({color,shininess: 40});
     const mesh = new THREE.Mesh(geometry, material);
     scene.add(mesh);
     return mesh;
 }
 
-const cellBody = makeSphere(2.2, "#5d9aa8", { x: 0, y: 0, z: 0 }, 0.18);
-const cellMembrane = makeSphere( 2.2, "#3e6b75", { x: 0, y: 0, z: 0 }, 0.55, true );
+const cellBody = makeSphere(
+    2.2,
+    "#5d9aa8",
+    { x: 0, y: 0, z: 0 },
+    0.18
+);
 
+// Wireframe sphere used as outer membrane
+const cellMembrane = makeSphere(2.2, "#3e6b75", { x: 0, y: 0, z: 0 }, 0.55, true);
 const nucleus = makeSphere(0.3, "#96b1e3", { x: 1.1, y: 0.7, z: 0.2 }, 0.8);
 const nucleolus = makeSphere(0.22, "#96b1e3", { x: -0.9, y: -0.8, z: 0.5 }, 0.8);
 
+// Makes stretched oval mitochondria instead of normal spheres
 function makeMitochondrion(x, y, z, rx = 0) {
     const m = makeSphere(0.22, "#c0785a", { x, y, z }, 0.92);
     m.scale.set(1.8, 1.0, 1.0);
     m.rotation.z = rx;
     return m; 
 }
-
 const mito1 = makeMitochondrion(0.85, -0.5, 0.6);
 const mito2 = makeMitochondrion(-1.1, 0.6, 0.3, 0.4);
-const mito3 = makeMitochondrion(0.3, 1.1, -0.5, -0.3);
+const mito3 = makeMitochondrion( 0.3, 1.1, -0.5, -0.3);
 
+// Curved tube structure
 {
+    // Creates a smooth curve using control points
     const curve = new THREE.CatmullRomCurve3([
         new THREE.Vector3(-0.6, 0.5, 1.0),
         new THREE.Vector3(-1.2, 0.2, 0.5),
@@ -85,10 +106,12 @@ const mito3 = makeMitochondrion(0.3, 1.1, -0.5, -0.3);
         new THREE.Vector3(0.4, -1.1, 0.1),
     ]);
     makeTube(curve, "#9e7a9e", 0.055);
+    
+    // Adds small spheres along the curve
     for (let i = 0; i <= 20; i++) {
         const t = i / 20;
         const pt = curve.getPoint(t);
-        makeSphere(0.028, "#c8a0c8", { x: pt.x + 0.06, y: pt.y + 0.06, z: pt.z, });
+        makeSphere(0.028, "#c8a0c8", {x: pt.x + 0.06, y: pt.y + 0.06, z: pt.z, });
     }
 }
 
@@ -97,13 +120,17 @@ const lyso2 = makeSphere(0.11, "#d4b06a", { x: -0.6, y: 1.0, z: -0.7 }, 0.9);
 const lyso3 = makeSphere(0.13, "#d4b06a", { x: 1.0, y: 0.8, z: -0.6 }, 0.9);
 
 const markers = [];
+
+// HTML overlays tge screen for labels
 const ui = document.createElement('div');
-ui.style.cssText = 'position:fixed;top:0;left:0;pointer-events:none;width:100%;height:100%;z-index:100;';
+ui.style.cssText = 'position:fixed;' + 'top:0;' + 'left:0;' + 'pointer-events:none;' + 'width:100%;' + 'height:100%;' + 'z-index:100;';
 document.body.appendChild(ui);
 
+// Creates clickable HTML marker tied to a 3D object
 function addMarker(mesh, title, info) {
     const el = document.createElement('div');
-    el.style.cssText = 'position:absolute;width:16px;height:16px;background:white;border:2px solid #5d9aa8;border-radius:50%;cursor:pointer;pointer-events:auto;transform:translate(-50%,-50%);';
+    el.style.cssText = 'position:absolute;' + 'width:16px;' + 'height:16px;' + 'background:white;' + 'border:2px solid #5d9aa8;' + 'border-radius:50%;' + 'cursor:pointer;' + 'pointer-events:auto;' + 'transform:translate(-50%,-50%);';
+    // Popup info when clicked
     el.onclick = () => alert(title + ": " + info);
     ui.appendChild(el);
     markers.push({ mesh, el });
@@ -115,42 +142,52 @@ addMarker(lyso1, "Lysosome", "Breaks down waste materials.");
 addMarker(cellBody, "Cytoplasm", "The jelly-like fluid that fills the cell.");
 
 function animate() {
+    // Runs this function every frame
     requestAnimationFrame(animate);
     if (isDragging) {
+        // Rotate based on mouse movement
         scene.rotation.y += rotSpeedY;
         scene.rotation.x += rotSpeedX;
     } else {
+        // Slow automatic rotation
         scene.rotation.y += 0.003 + rotSpeedY;
+        // Gradually slows momentum
         rotSpeedY *= 0.92;
         rotSpeedX *= 0.92;
         scene.rotation.x += rotSpeedX;
     }
-
+    // Updates marker positions so they stay attached to 3D objects
     markers.forEach(m => {
         const pos = new THREE.Vector3();
+        // Gets world position of object
         m.mesh.getWorldPosition(pos);
+        // Converts 3D coords into screen coords
         pos.project(camera);
+        // Convert normalized coords into pixel positions
         m.el.style.left = (pos.x * 0.5 + 0.5) * window.innerWidth + 'px';
         m.el.style.top = (pos.y * -0.5 + 0.5) * window.innerHeight + 'px';
-        m.el.style.opacity = pos.z > 0.8 ? '0' : '1'; 
+        // Hide marker if object is too far behind
+        m.el.style.opacity = pos.z > 0.8 ? '0' : '1';
     });
-
     renderer.render(scene, camera);
 }
 
 let isDragging = false;
 let prevMouseX = 0, prevMouseY = 0;
+// Rotation velocity
 let rotSpeedX = 0, rotSpeedY = 0;
 
-document.addEventListener("mousedown", (e) => { isDragging = true; prevMouseX = e.clientX; prevMouseY = e.clientY; });
+document.addEventListener("mousedown", (e) => {isDragging = true; prevMouseX = e.clientX; prevMouseY = e.clientY;});
 document.addEventListener("mouseup", () => (isDragging = false));
 document.addEventListener("mousemove", (e) => {
     if (!isDragging) return;
+    // Mouse movement affects rotation speed
     rotSpeedY = (e.clientX - prevMouseX) * 0.005;
     rotSpeedX = (e.clientY - prevMouseY) * 0.005;
     prevMouseX = e.clientX; prevMouseY = e.clientY;
 });
 
+// Same dragging system but for phones/tablets
 document.addEventListener("touchstart", (e) => {
     isDragging = true;
     prevMouseX = e.touches[0].clientX;
