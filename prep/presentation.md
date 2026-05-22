@@ -4,7 +4,7 @@
 * Our bodies are made up with 30-100 trillion of cells, today we are shrinking you down and observing 1 of the trillions of cells in your body
 
 ## Product
-* 
+* _Demonstration of the project, and explaining its features + beyond MVP_
 
 ## Process
 * Unlike the traditional javascript that we learned this year, I had to learn a whole new set of javascript because of my tool three.js which uses 3D rendering,  a totally new concept that we have not touched up on in class
