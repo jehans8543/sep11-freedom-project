@@ -42,6 +42,21 @@ In order to know what to say, I wrote a script for myself and it looked somethin
 
 I wrote it in bullet points to indicate what I was going to say for each section, I also wrote sub bullet points to signal which slides and parts of my presentation are directly connected with one another. I found it helpful, since it was able to guide me throughout my presentation. Though I wished I practiced more.
 
+### Expo
+#### Making the Elevator-Pitch
+
+## Challenges 
+### Presentation 
+One of the biggest challenges that I faced during this stage of the freedom project is giving the in-class presentation. The reason for this was because I choose to go early on (choosing **2**) since I wanted to get it over with. But now that I look back I probably should've picked **3**, since I didn't have more time to practice my script. The day before I gave my presentation, the day before I had an AP test, and when I got home I had to touch up on my slides and practice my script in the evening. Overall, I only had around an hour or two to practice my presentation. 
+
+The next day I was either the first or second person to present. And once I stepped in front of everyone, I felt so unprepared. I gave my hook which went by pretty well. But for the rest of presentation I was struggling immensly. I kept stammering over my words, and confusing some words together. The worst part of it all, was that when I was showing off the product of my project (which I was already embarrased about), my beyond MVP wasn't working. The night before I was polishing my code, and I must've deleted or added something by accident that made it not to work. I also didn't end off my presentation really strong, I felt like when I was sharing my takeaways I kept repeating myself. I walked out of my presentation feeling defeated, knowing that I didn't do well. 
+
+After we finished all the presentations in class, Mr. Mueller gave us his speech about how he's so proud of all of us, when all I could think about was how I definetly got a low score on my presentation. Once I got the email for my grade, I opened with anxiousness knowing that it would be a bad grade. But once I saw it I was shocked.
+
+<img width="948" height="405" alt="image" src="https://github.com/user-attachments/assets/2786ad8d-0b3e-44a2-8d42-dea8622fc48b" />
+
+As you can see from the grade I recieved a **10/10** on both my _product_ and _presentation_. When I recieved this grade I was shocked, until I read Mr. Mueller's feedback. He told me that it was okay for some of my code not to be working during the presentation. In terms of my feedback, he advised that I was a litte more clear in my takeaways next time, but other than that he can see that i practiced my presentation. 
+
 
 
 
