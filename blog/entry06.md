@@ -33,6 +33,10 @@ When you compare the two slides, you would see that my slides from last year had
 
 I used my slides as a outline for what I was going to say for my actual presentation, since I always had an idea, but the slides help me put them together. 
 
+**Link to Slides**:
+
+[Animal Cell, SEP 11 Freedom Project](https://docs.google.com/presentation/d/1ckJ1ZrEFfGxbTEfDc984fwDbndB3qmljoAuO6QFYvjU/edit)
+
 #### Presentaion Script 
 Every year Mr. Mueller makes a google form, with us getting to choose when you want to go. **1** being you want to be one of the first people to go, while **5** is one of the last people to go. For I just wanted to get it over with hence, I choose **2**. This meant I have less time to prepare for my prsentation. For the most part I knew what I was going to say, but I knew that I had to practice it a lot, especially since all my slides were purely just pictures and screenshots. 
 
@@ -41,6 +45,10 @@ In order to know what to say, I wrote a script for myself and it looked somethin
 <img width="417" height="372" alt="image" src="https://github.com/user-attachments/assets/a3ca050a-d56a-481c-908d-26ed3c699757" />
 
 I wrote it in bullet points to indicate what I was going to say for each section, I also wrote sub bullet points to signal which slides and parts of my presentation are directly connected with one another. I found it helpful, since it was able to guide me throughout my presentation. Though I wished I practiced more.
+
+**Link to Presentation Plan**
+
+(../prep/presentation.md)
 
 ### Expo
 #### Making the Elevator-Pitch
