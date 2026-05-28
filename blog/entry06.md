@@ -66,6 +66,7 @@ After we finished all the presentations in class, Mr. Mueller gave us his speech
 As you can see from the grade I recieved a **10/10** on both my _product_ and _presentation_. When I recieved this grade I was shocked, until I read Mr. Mueller's feedback. He told me that it was okay for some of my code not to be working during the presentation. In terms of my feedback, he advised that I was a litte more clear in my takeaways next time, but other than that he can see that i practiced my presentation. 
 
 ### Elevator Pitch During the Expo
+My elevator 
 
 ## EDP 
 The EDP stage that we are currently on is that we are on _step 8_, which is communicating the results. The reason why we are on this stage of the EDP is because we gave presentations in class and during the Expo of our _finished_ project. Meaning that we finally came to an end of this year long freedom project. If I were to go back in time from where we first started our project, I would do a lot fo stuff differently, but I would also like to keep a lot of the process the same. I felt as if I learend so mmuch about coding and _time management_ with this project, and I was glad I was able to share that during the 8th stage of the EDP. 
@@ -74,7 +75,7 @@ The EDP stage that we are currently on is that we are on _step 8_, which is comm
 ### Public Speaking 
 One of the main skills I learned during this stage of the freedom project is _public speaking_. For a lot of people, including myself, public speaking or giving presentations is hard. I barely am able to think of this when I am put of the spot. In order for me to give a good thought out presentation I need hours of practice. This is a struggle that I learned I had during my in-class presentation for this project. Sure, I practiced, but I didn't practice as long as I normally would. The more I practice, the more confident I am. When I walked in to give my prsentation, I wasn't confident in myself at all. When I came in to my presentation, I was stammering over my words. This definetly wasn't my best presntation, but now I know that I need a lot of practice before I know I'm going to give a presentation. 
 
-###
+### 
 
 
 [Previous](entry05.md) | [Next](entry07.md)
