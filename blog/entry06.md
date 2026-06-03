@@ -50,9 +50,6 @@ I wrote it in bullet points to indicate what I was going to say for each section
 
 [Presentation](../presentation/presentation.md)
 
-### Expo
-#### Making the Elevator-Pitch
-
 ## Challenges 
 ### Presentation 
 One of the biggest challenges that I faced during this stage of the freedom project is giving the in-class presentation. The reason for this was because I choose to go early on (choosing **2**) since I wanted to get it over with. But now that I look back I probably should've picked **3**, since I didn't have more time to practice my script. The day before I gave my presentation, the day before I had an AP test, and when I got home I had to touch up on my slides and practice my script in the evening. Overall, I only had around an hour or two to practice my presentation. 
@@ -66,7 +63,7 @@ After we finished all the presentations in class, Mr. Mueller gave us his speech
 As you can see from the grade I recieved a **10/10** on both my _product_ and _presentation_. When I recieved this grade I was shocked, until I read Mr. Mueller's feedback. He told me that it was okay for some of my code not to be working during the presentation. In terms of my feedback, he advised that I was a litte more clear in my takeaways next time, but other than that he can see that i practiced my presentation. 
 
 ### Elevator Pitch During the Expo
-My elevator 
+One of the biggest mistakes I made this time around is that I didn't neccarily prepare or looked over a possible elevator pitch beforehand. Hence, the day of the Expo, I wrote a quick elevator pitch before it started and I was trying to memorize that. My efforts in trying to memorize it within 15 minute minutes didn't work well. The reason why I didn't at least make one beforehand is because I _procrastinated_. All my AP exams were over, and I got the in-class presentation out of the way. Therefore, it felt like there was nothing left that was major for me to do, that included the elevator pitch. I never really procrastinated much before, but this year my procrastination for SEP increased heavily. And during the Expo I ended up regretting that, since I was stumbling over my words with the judges. After I gave my one minute pitch, I felt like that I could do signifcantly better, but I wasn't able to show my full capabilites because of my procrastination. I hope for next years freedom project and Expo, I will put in more effort and procrastinate much less. 
 
 ## EDP 
 The EDP stage that we are currently on is that we are on _step 8_, which is communicating the results. The reason why we are on this stage of the EDP is because we gave presentations in class and during the Expo of our _finished_ project. Meaning that we finally came to an end of this year long freedom project. If I were to go back in time from where we first started our project, I would do a lot fo stuff differently, but I would also like to keep a lot of the process the same. I felt as if I learend so mmuch about coding and _time management_ with this project, and I was glad I was able to share that during the 8th stage of the EDP. 
@@ -75,8 +72,8 @@ The EDP stage that we are currently on is that we are on _step 8_, which is comm
 ### Public Speaking 
 One of the main skills I learned during this stage of the freedom project is _public speaking_. For a lot of people, including myself, public speaking or giving presentations is hard. I barely am able to think of this when I am put of the spot. In order for me to give a good thought out presentation I need hours of practice. This is a struggle that I learned I had during my in-class presentation for this project. Sure, I practiced, but I didn't practice as long as I normally would. The more I practice, the more confident I am. When I walked in to give my prsentation, I wasn't confident in myself at all. When I came in to my presentation, I was stammering over my words. This definetly wasn't my best presntation, but now I know that I need a lot of practice before I know I'm going to give a presentation. 
 
-### 
-
+### Overcoming Procrastination 
+Over my time in SEP 11, I feel as if the most valuable skill that I learned is trying to _overcome procrastination_. As I mentioned time and time again, procrastination hit me hard this year. And my performance in the class and in the expo suffered because of it. My procrastination made me feel embarrassed of myself, since I know that I can do better. Though in the end, I'm glad that I experienced this embarrasment. It allowed me to grow as a person and realize the consequences of what will happen if I procrastinate in the future. This time around I didn't really get penailzed for it, but it allowed me to learn that I could get penalized for it in the future. Which is why I'm glad that I went through this year of procrastination with my freedom project, because without it I would enver learned to realize the serious consequences of it. 
 
 [Previous](entry05.md) | [Next](entry07.md)
 
