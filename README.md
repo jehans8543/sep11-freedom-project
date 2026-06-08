@@ -21,9 +21,14 @@ Overall, my whole project centers around my tool _three.js_, since without it I 
 ## Implications
 ##### PROS
 * **Visualization**
-  * I believe that my project, animal cell; had a _positive_ impact on the educational community, especially on the biology community. The reason why I believe that my project a positive impact on this community since it made it so that instead of learning from basic diagrams, you get to interact and visualize your learning even better with my 3D model of an animal cell. 
+  * I believe that my project, animal cell; had a _positive_ impact on the educational community, especially on the biology community. The reason why I believe that my project a positive impact on this community since it made it so that instead of learning from basic diagrams, you get to interact and visualize your learning even better with my 3D model of an animal cell. Instead of having to look at basic diagrams, you are now able to interact with your learning, having an even more enjoyable time learning about the organelles in a animal cell. 
+* **Knowledge Retention**
+  * I believe that my project allowes for **increased retention**, which is especially helpful for those who are taking a biology course. Since a 3D model allows for **better visualization**, it would elimnate the need for students to reconstruct the depth of an animal cell in their head, rather they can scroll around my model of one and have a good idea of what it would look like on an actual cell.
+  * Another reason why my animal cell model allows for better retention is because you can interact with your learning by clicking on the popup cards for the organelles, which not only makes the viewer more engaged but it also allows them to mentally retain the information from the cards about the organelles. 
 ##### CONS
-* 
+* **Inaccuracy**
+  * One of the cons that my project has is that the organelles and its placement is not accurate to the ones in the animal cell. The reason for this was becaues it was hard for me to code the organelles in the exact spot on where it would be in the animal cell, hence I had to wing it. This can confuse learners, and poetentially lead to them having misinformation of where the organelles are placed in the cell and which other organlles it works with.
+  * Another inaccuracy that I have is that I did not code all the organelles that are in the animal cell mode, simply because I ran out of time. This is considered another con since once again it can lead to inaccuracies in learning since I do not have a complete accurate version of the animal cell model. Viewers are losing key information on other organelles due to it not having the exact same features and functions to what an animal cell actually looks like. 
 
 
 ## Blog
