@@ -2,6 +2,13 @@
 ##### 05/22/2026
 
 ## Progress 
+### Finished Project 
+Now that we were approaching the end of the year, it meant that we had to finish our freedom projects as well. Mr. Mueller had gave us two due dates, one for our _MVP_ and another for our _Beyond MVP_. For my MVP, all I had was the basic model of my animal cell using solely javascript and three.js. I barely had any work done for my MVP due to my _**procrastination**_. Though before the beyond MVP due date I had more time to enhance my project, and I was able to add a cool new feature, which was when I would click on the organellesa popup card would pop up defining what that organelle is. I was quite proud of myself at the fact that I was able to add another feature to my freedom project. 
+
+**Link to freedom Project**:
+
+[Animal Cell](https://jehans8543.github.io/sep11-freedom-project/)
+
 ### In-Class Presentations
 As always, after finishing our freedom projects including our beyond MVP, we now have to move on to in-class presentations. During in-class presentations. The in-class presentation was what I was worried about the most the whole year, I felt embarrassed to show off my project. The quality of it wasn't great, nor was it's functionability. There was no way I could back out of the presentation since my grade was counting on it. Hence, I decided that my presentation and what I talk about during it would outweigh the lack of quality in my project. 
 
@@ -66,7 +73,7 @@ As you can see from the grade I received a **10/10** on both my _product_ and _p
 One of the biggest mistakes I made this time around is that I didn't necessarily prepare or look over a possible elevator pitch beforehand. Hence, the day of the Expo, I wrote a quick elevator pitch before it started and I was trying to memorize that. My efforts in trying to memorize it within 15 minutes didn't work well. The reason why I didn't at least make one beforehand is because I _procrastinated_. All my AP exams were over, and I got the in-class presentation out of the way. Therefore, it felt like there was nothing left that was major for me to do, that included the elevator pitch. I never really procrastinated much before, but this year my procrastination for SEP increased heavily. And during the Expo I ended up regretting that, since I was stumbling over my words with the judges. After I gave my one minute pitch, I felt like I could do significantly better, but I wasn't able to show my full capabilities because of my procrastination. I hope for next year's freedom project and Expo, I will put in more effort and procrastinate much less. 
 
 ## EDP 
-The EDP stage that we are currently on is that we are on _step 8_, which is communicating the results. The reason why we are on this stage of the EDP is because we gave presentations in class and during the Expo of our _finished_ project. Meaning that we finally came to an end of this year-long freedom project. If I were to go back in time from where we first started our project, I would do a lot of stuff differently, but I would also like to keep a lot of the process the same. I felt as if I learned so much about coding and _time management_ with this project, and I was glad I was able to share that during the 8th stage of the EDP. 
+The engineering design process stage that we are currently on is that we are on _step 8_, which is communicating the results. The reason why we are on this stage of the EDP is because we gave presentations in class and during the Expo of our _finished_ project. Meaning that we finally came to an end of this year-long freedom project. If I were to go back in time from where we first started our project, I would do a lot of stuff differently, but I would also like to keep a lot of the process the same. I felt as if I learned so much about coding and _time management_ with this project, and I was glad I was able to share that during the 8th stage of the EDP. 
 
 ## Skills 
 ### Public Speaking 
